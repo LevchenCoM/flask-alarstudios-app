@@ -39,4 +39,3 @@ flask run
 
 Go to http://localhost:5000 and enjoy!
 
-**Note: Username and password for super-user - "admin"**
