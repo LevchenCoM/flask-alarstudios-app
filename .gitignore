@@ -1,0 +1,8 @@
+venv/
+
+.DS_Store
+.DS_Store?
+
+# Python compiled files
+*pyc
+/.idea/
