@@ -4,8 +4,10 @@ function getData() {
         method: 'GET',
     }).then(function (response) {
         if (response.ok) {
-
             return response.json();
+        } else {
+            let root = document.getElementById("root");
+            root.innerText = "No data"
         }
     }).then(function (data) {
         let root = document.getElementById("root");

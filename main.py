@@ -18,7 +18,7 @@ def get_data():
     try:
         results = get_data_async()
     except:
-        abort(404)
+        abort(400)
 
     return jsonify(results)
 

@@ -18,7 +18,7 @@ def get_data_async():
 
     loop = asyncio.new_event_loop()
 
-    results = loop.run_until_complete(get_data())
+    results = loop.run_until_complete(asyncio.wait_for(get_data(), timeout=2.0))
     loop.close()
 
     data = []
